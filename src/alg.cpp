@@ -23,10 +23,10 @@ uint64_t nPrime(uint64_t n) {
     bool flag = true;
     uint64_t check = 0;
     int number = 0;
-    for (int i = 2; flag != false; i++){
+    for (int i = 2; flag != false; i++) {
         number = i;
         bool sec = true;
-        for (int i=2; i <= sqrt(number); i++){
+        for (int i=2; i <= sqrt(number); i++) {
             if (number%i == 0) {
                 sec = false;
                 break;
@@ -46,10 +46,10 @@ uint64_t nextPrime(uint64_t value) {
     bool flag = true;
     int num = 0;
     int next = value+1;
-    for (next; flag != false; next++){
+    for (next; flag != false; next++) {
         num = next;
         bool sec = true;
-        for (int i = 2; i <= sqrt(num); i++){
+        for (int i = 2; i <= sqrt(num); i++) {
             if (num%i == 0){
                 sec = false;
                 break;
