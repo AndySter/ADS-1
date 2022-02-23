@@ -34,12 +34,12 @@ uint64_t nPrime(uint64_t n) {
         }
         if (sec) {
             check++;
-            if (check == n){
+            if (check == n) {
                 flag = false;
             }
         }
     }
-   return number;
+    return number;
 }
 
 uint64_t nextPrime(uint64_t value) {
@@ -50,7 +50,7 @@ uint64_t nextPrime(uint64_t value) {
         num = next;
         bool sec = true;
         for (int i = 2; i <= sqrt(num); i++) {
-            if (num%i == 0){
+            if (num%i == 0) {
                 sec = false;
                 break;
             }
