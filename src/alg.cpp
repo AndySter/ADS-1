@@ -6,9 +6,9 @@
 
 bool checkPrime(uint64_t value) {
   bool sec = true;
-  for (int i = 2; i < (sqrt(value)+1); i++) {
+  for (int i = 2; i < sqrt(value); i++) {
     if (value%i == 0) {
-      sec=false;
+      sec = false;
       break;
     }
   }
@@ -49,7 +49,7 @@ uint64_t nextPrime(uint64_t value) {
     for (next; flag != false; next++){
         num = next;
         bool sec = true;
-        for (int i=2; i <= sqrt(num); i++){
+        for (int i = 2; i <= sqrt(num); i++){
             if (num%i == 0){
                 sec = false;
                 break;
@@ -65,11 +65,11 @@ uint64_t nextPrime(uint64_t value) {
 uint64_t sumPrime(uint64_t hbound) {
     int sum = 0;
     int number = 0;
-    for(int i=2; i < hbound; i++){
+    for (int i = 2; i < hbound; i++) {
        number = i;
        bool sec = true;
-       for (int i=2; i <= sqrt(number); i++){
-            if (number%i==0) {
+       for (int i = 2; i <= sqrt(number); i++) {
+            if (number%i == 0) {
                 sec = false;
                 break;
             }
